@@ -4,11 +4,13 @@ from datetime import datetime
 from typing import List
 
 # Broker config
-BROKER_HOST = "10.0.0.186"
+BROKER_HOST = "192.168.1.2" # Your IP address
 BROKER_PORT = 1883
-BROKER_USER = "admin"
-BROKER_PASSWORD = "admin"
-RESPONSE_TOPIC = "gateway/02426da6df1e5780/iqrf/responses"
+RESPONSE_TOPIC = "gateway/12345/iqrf/responses" # Your response topic
+
+# BROKER_USER = "admin"
+# BROKER_PASSWORD = "admin"
+
 
 
 class Measurement:
@@ -67,7 +69,7 @@ def handle_message(msg: str):
 
 # paho-mqtt download and documentation: https://pypi.org/project/paho-mqtt/
 client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
-client.username_pw_set(BROKER_USER, BROKER_PASSWORD)
+# client.username_pw_set(BROKER_USER, BROKER_PASSWORD) # Only when using authentication
 
 
 def on_connect(client, userdata, flags, reason_code, properties):
