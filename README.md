@@ -28,7 +28,7 @@
 
 ### Formát dat:
 Data budou na MQTT broker přicházet v intervalu nastaveném v IQAROS+. Formát dat je následující:
-```json
+```
 {
   "mType": "iqrfSensorData_ReportAsync",
   "data": {
@@ -61,6 +61,6 @@ Zpráva obsahuje ještě další data, ale ty nejsou pro základní práci podst
 
 ### Hotové ukázky:
 - Po úspěšném připojení k MQTT brokeru je možné začít pracovat s příchozími daty. K dispozici jsou dvě základní ukázky v jazyce Python využívající MQTT klient Paho:
-  - `basic.py` - ukázka připojení k brokeru a čtení dat
-  - `extended.py` - rozšířená ukázka počítající průměrnou teplotu a vlhkost
+  - `examples/basic.py` - ukázka připojení k brokeru a čtení dat
+  - `examples/extended.py` - rozšířená ukázka počítající průměrnou teplotu a vlhkost
 - Pro připojení je třeba vyplnit údaje: BROKER_HOST = **IP adresa vašeho MQTT brokera**, RESPONSE_TOPIC = **Response topic z IQAROS+ aplikace**
