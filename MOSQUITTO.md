@@ -14,6 +14,6 @@ Vytvořte soubor s názvem mosquitto.conf a vložte do něj následující obsah
     Pozor: je třeba být ve stejném adresáři jako je soubor mosquitto.conf.
 
 
-4) Pokud nejsou vypsány žádné chyby, broker běží a je možné se k němu připojit (při správném nastavení není žádný výpis). Pro připojení je možné využít ip adresu počítače (např.: mqtt://192.168.1.2:1883) a vhodný program (např. [MQTT explorer](https://mqtt-explorer.com/) nebo libovolný MQTT klient).
+4) Pokud nejsou vypsány žádné chyby, broker běží a je možné se k němu připojit (při správném nastavení není žádný výpis a příkaz není ukončen). Pro připojení je možné využít ip adresu počítače (např.: mqtt://192.168.1.2:1883) a vhodný program (např. [MQTT explorer](https://mqtt-explorer.com/) nebo libovolný MQTT klient).
 
 5) Je možné dále nastavit pro broker uživatele a heslo, více info v [oficiálním návodu](https://mosquitto.org/documentation/authentication-methods/).
