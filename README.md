@@ -22,6 +22,9 @@
   7. Pro testování spojení je také praktické tlačítko *Collect data now* (ikonka prstu v horním panelu). Po jeho stisknutí jsou naměřená data ihned poslána na MQTT broker.
 
 - Pro ověření komunikace je možné použít například program [MQTT Explorer](https://mqtt-explorer.com/).
+- Pokud ani po několika minutách nedorazí žádná zpráva na MQTT broker, je dobré zkontrolovat:
+  - Zda je IQRF gateway a počítač, na kterém běží MQTT broker ve stejné síti (nebo je zajištěné spojení)
+  - Zda na počítači s MQTT brokerem není zapnutý firewall (běžné antivirové programy často blokují příchozí zprávy, proto je někdy třeba na dobu testování firewall pozastavit)
 
 
 ## Práce s daty:
